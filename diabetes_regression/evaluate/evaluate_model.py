@@ -132,7 +132,7 @@ try:
                 )
             )
 
-        if (new_model_mse < production_model_mse):
+        if (new_model_mse <= production_model_mse):
             print("New trained model performs better, "
                   "thus it should be registered")
         else:
